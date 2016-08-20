@@ -116,5 +116,5 @@ public interface VideoViewApi {
 
     void setListenerMux(EMListenerMux listenerMux);
 
-    void onVideoSizeChanged(int width, int height);
+    void onVideoSizeChanged(int width, int height, float pixelWidthHeightRatio);
 }

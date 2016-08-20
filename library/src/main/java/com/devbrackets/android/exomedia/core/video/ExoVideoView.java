@@ -222,8 +222,8 @@ public class ExoVideoView extends ResizingTextureView implements VideoViewApi, A
     }
 
     @Override
-    public void onVideoSizeChanged(int width, int height) {
-        if (updateVideoSize(width, height)) {
+    public void onVideoSizeChanged(int width, int height, float pixelWidthHeightRatio) {
+        if (updateVideoSize((int) (width * pixelWidthHeightRatio), height)) {
             requestLayout();
         }
     }
